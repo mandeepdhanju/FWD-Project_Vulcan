@@ -1,0 +1,31 @@
+// Resets
+
+// Box Sizing Reset
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+// Image Reset
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Table Reset
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Remove Margins on the body
+body {
+    margin: 0;
+}

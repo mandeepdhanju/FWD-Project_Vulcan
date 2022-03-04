@@ -1,0 +1,23 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+header {
+    background-color: rgba(black, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: em(6) em(8);
+    position: relative;
+}
+
+
+.logo {
+    width: 100px;
+    svg {
+        max-width: 100%;
+    }
+}
+
+

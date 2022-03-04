@@ -1,0 +1,16 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+
+/* Hamburger Styles */
+.hamburger-menu {
+    margin: 0 20px 20px 0;
+    display: block;
+    width: 40px;
+
+   // background-color: transparent;
+    border:solid red 2px;
+    padding: 0;
+}
+

@@ -1,0 +1,94 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+footer{
+
+    position: relative;
+
+    .waveBlueLine{
+        position: absolute;
+        width: 193%;
+        height: 170px;
+        left: -53px;
+        top: -78px;
+        img {
+            max-width: initial;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    background-color: #009ddc;
+    padding: 0 20px;
+
+    .footer-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100px;
+    }
+
+    .footer-links{
+       // background-color: green;
+       // text-decoration: none;
+      // display: flex;
+       //justify-content: center;
+
+       // ul lis
+
+        .footer-Ulist{
+            text-decoration: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-social {
+            width: 20px;
+            &.facebook {
+                margin-right: 10px;
+            }
+            &.linkedin {
+                width: 19px;
+                position: relative;
+                top: 1px;
+                margin-right: 25px;
+            }
+        }
+
+        .telephone {
+            margin-right: 24px;
+        }
+
+
+        // list for copyright 2022
+        .copyright{
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100%;
+        }
+    }
+
+    
+    // .fa {
+    //     font-size: 3em;
+    //     color: pink;
+    // }
+  
+}
