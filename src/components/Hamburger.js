@@ -1,22 +1,26 @@
 import "../styles/styles.scss"
+import { useState } from "react";
 
 function Hamburger(){
 
+  const [isActive, setActive] = useState(false)
+
     function openMenu(){
-        document.body.classList.toggle('show');
-      }
+        document.body.classList.toggle('show')
+        setActive(!isActive)
+    }
+
+
 
 
     return (
-
-        <button onClick={openMenu} class="hamburger-menu" id="btn-menu">
-          <span class="hamburger-menu-content" tabindex="-1">      
-	      <span class="sr-only">Menu</span>
-	      <span class="bar" id="bar"></span>
-          </span>
-        </button>
+      <div className={`hamburger-menu ${isActive ? "is-active" : ""}`} onClick={openMenu}> 
+        <div className="line-menu half top"></div>
+        <div className="line-menu middle"></div>
+        <div className="line-menu half bottom"></div>
+      </div>
  
-      )
+    )
   }
   
   export default Hamburger;
