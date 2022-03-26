@@ -1,2 +1,27 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+
+.slider {
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.slider-label {
+    text-transform: capitalize;
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    left: 0px;
+    font-size: 1.5em;
+    top: 10px;
+    width: 100%;
+}
+// WORK TO BE DONE HERE
+.slider-btn {
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    margin: auto;
+}
