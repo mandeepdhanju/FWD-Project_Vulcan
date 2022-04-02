@@ -5,19 +5,14 @@
 header {
     background: rgba(54, 54, 54, .75);
     position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
+    width: 100%;
     z-index: 10;
     display: block;
 }
 
 
 .header-container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px 10px;
 }
 
 .header-contact {
@@ -25,8 +20,9 @@ header {
 }
 
 .header-content {
-    padding-top: 8px;
-    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-contact {
@@ -34,7 +30,6 @@ header {
 }
 
 .header-logo {
-    float: left;
     width: 99px;
 }
 
@@ -62,21 +57,24 @@ header {
     header {
         background: none;
     }
-
+    .header-container{
+        padding: 0;
+    }
     .header-contact {
         position: relative;
         display: flex;
-        padding: 10px 0 0;
+        width: 100%;
+        padding: 0;
+        justify-content: space-evenly;
+        .vulcan-logo{
+            margin-top: 20px;
+        }
     }
 
-
-    .header-contact-items {
-        margin-left: -10px;
-        margin-right: -10px;
-    }
 
     .header-contact-links {
         float: left;
+        text-transform: uppercase;
     }
 
     .header-contact-list {
@@ -97,16 +95,17 @@ header {
     }
 
     .header-content {
-        padding-top: 0;
-        max-width: 850px;
-        margin-left: auto;
-        margin-right: auto;
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 0;
+        justify-content: space-evenly;
     }
 
     .header-logo {
         float: none;
         width: 160px;
-        display: block;
+        display: none;
         margin: -7px auto 15px;
     }
 
@@ -117,8 +116,8 @@ header {
     }
 
     .nav-items {
-        padding: 0;
-        float: none;
+        width: 100%;
+        max-width: 700px;
     }
 
     .menu-desktop {
@@ -131,24 +130,15 @@ header {
 
     .menu-list-desktop {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: stretch;
         background: rgba(54, 54, 54, .75);
-        padding-left: 0;
         list-style: none;
 
         li {
-            position: relative;
-            vertical-align: middle;
-            width: 11%;
-            font-size: 12px;
-            line-height: 15px;
             font-weight: 500;
-            margin-left: auto;
-            margin-right: auto;
-            height: 100%;
-            padding: 5px;
+            padding: 10px;
             color: #fff;
             cursor: pointer;
         }

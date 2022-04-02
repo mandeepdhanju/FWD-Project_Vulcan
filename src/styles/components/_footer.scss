@@ -1,30 +1,16 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-
+.waveBlueLine{
+    margin-bottom: -5px;
+    background: #154a66;
+}
 footer{
-
-    position: relative;
-
-    .waveBlueLine{
-        position: absolute;
-        width: 193%;
-        height: 170px;
-        left: -53px;
-        top: -78px;
-        img {
-            max-width: initial;
-            width: 100%;
-            height: 100%;
-        }
-    }
-
     background-color: #009ddc;
-    padding: 0 20px;
+    padding: 20px 20px;
 
     .footer-content {
         position: relative;
-        z-index: 1;
     }
 
     .footer-logo{

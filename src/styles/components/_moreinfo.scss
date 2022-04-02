@@ -1,125 +1,64 @@
-.find-vulcan {
-    position: relative;
-    overflow: hidden;
+.more-info{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-
-.find-img-holder {
-    position: relative;
-    min-width: 583px;
-    float: left;
-    left: 50%;
-    width: 100%;
-}
-
-.find-img-display {
-    left: -50%;
-    position: relative;
-    min-width: 583px;
-    float: left;
-    width: 100%;
-}
-
-.find-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;   
-}
-
-.find-vulcan-content {
-    position: absolute;
-    left: 0;
-    top: 25%;
-    right: 0;
-    bottom: 25%;
+.more-info>div{
+    padding: 0 14px;
     text-align: center;
 }
-
-.find-vulcan-caption {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
+.more-info h2{
+    margin: 0 auto 20px;
+    font-size: 30px;
+    line-height: 1.2em;
 }
-
-.find-vulcan-box {
-    padding: 15px;
-    padding-top: 39px;
-    white-space: normal;
-
-    h2 {
-        display: inline-block;
-        color: #504f4f;
-        font-size: 30px;
-        line-height: 30px;
-        margin: 0 0 12px;
-    }
-}
-
-.more-info-btn {
-    background: none;
+.more-info a{
     font-size: 16px;
-    line-height: 20px;
-    padding: 11px 10px 10px;
-    color: #504f4f;
-    min-width: 182px;
+    padding: 10px;
+    max-width: 200px;
+    background: none;
     font-weight: 700;
     border-radius: 0;
-    display: inline-block;
-    margin-bottom: 0;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid #504f4f;
+    margin: 0 auto;
     text-decoration: none;
+}
+.find-vulcan {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../images/map.jpg);
+    background-size: cover;
 }
 
 .contact {
     background: #154a66;
     color: #fff;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.contact-box {
-    padding: 15px;
-    white-space: nowrap;
-    text-align: center;
-
+.more-info-btn {
+    color: #504f4f;
+    border: 1px solid #504f4f;
 }
 
-.contact-content {
-    padding: 53px 30px 95px;
-    white-space: normal;
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 100%;
-    width: 100%;
-}
 
 .contact-btn {
-    font-size: 16px;
-    line-height: 20px;
-    padding: 11px 10px 10px;
-    background: none;
     color: #fff;
-    font-weight: 700;
-    border-radius: 0;
-    display: inline-block;
-    margin-bottom: 0;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
     border: 1px solid #fff;
-    text-decoration: none;
 }
 
 @media(min-width: 768px) {
-    .contact {
-        width: 50%;
-        float: left;
+    .more-info{
+        flex-direction: row-reverse;
+        height: 350px;
     }
-    .find-vulcan {
-        width: 50%;
-        float: right;
+    .more-info>div{
+        flex-basis: 50%;
+        height: 100%;
     }
 }

@@ -24,28 +24,13 @@
     font-weight: normal;
     font-style: normal;
   }
-// * {
-//     box-sizing: reset;
-// }
+  body {
+    width: 100%;
+}
 
-// img {
-//     max-width: 100%;
-//     height: auto;
-// }
-
-// body {
-//     background-color: red;
-//     color: white;
-// }
-
-// nav {
-//     text-transform: uppercase;
-//     a {
-//         text-decoration: none;
-//         color: white;
-//     }
-// }
-
+.wrapper {
+    overflow: hidden;
+}
 
 // Google Fonts
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');

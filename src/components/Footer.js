@@ -11,10 +11,11 @@ import waveblue from '../images//wave-blue-light.png'
 
 function Footer() {
     return (     
+      <>
+      <div class="waveBlueLine">
+        <img src={waveblue} alt="waveBlueLine" />
+      </div>
       <footer id="footer">
-        <div class="waveBlueLine">
-          <img src={waveblue} alt="waveBlueLine" />
-        </div>
         <div className="footer-content">
           <div class="footer-logo">
             <Logo />
@@ -52,6 +53,7 @@ function Footer() {
         </div>
        
       </footer>
+      </>
       )
   }
 

@@ -2,7 +2,6 @@
 @use '../utilities/mixins' as *;
 
 
-
 nav {
 
     @mixin flatten($list: false) {
@@ -42,18 +41,5 @@ nav {
         right: 0;   
         padding-top: 10px;                
     }
-
-    // ul{
-
-    //     @include flatten(true);
-    //     width: 150px;
-    //     height: 40px;
-    //     //display: none;
-    //     position: absolute;
-    //     top: 45px;
-    //     //border: 5px solid black;    
-
-    // }
-    
 
 }
