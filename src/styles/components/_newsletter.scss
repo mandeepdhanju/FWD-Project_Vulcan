@@ -1,0 +1,113 @@
+.newsletter {
+    background-color: #b8ddf1;
+    display: block;
+    margin-top: 0;
+}
+
+.newsletter-container {
+    padding-top: 22px;
+    padding-bottom: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.newsletter-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+
+    label {
+        color: #154a66;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 0 17px;
+        display: inline-block;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    input {
+        box-shadow: none;
+        border-radius: 0;
+        font-size: 12px;
+        line-height: 17px;
+        height: 33px;
+        border: 0;
+        padding: 8px 19px 7px;
+        color: #504f4f;
+        display: block;
+        width: 100%;
+
+    }
+}
+
+.newsletter-inputs {
+    overflow: hidden;
+    padding: 0 8px 0 0;
+}
+
+.submit-btn {
+    width: 94px;
+    float: right;
+    padding: 5px;
+    line-height: 21px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 0;
+    background-color: #009ddc;
+    border-color: #009ddc;
+    color: #fff;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+
+.submit-btn:hover {
+    background-color: black;
+}
+
+@media (min-width: 768px) {
+    .newsletter-container {
+        width: 740px;
+
+        label {
+            float: left;
+            margin: 3px 0 0;
+        }
+
+        input {
+            font-size: 16px;
+            line-height: 20px;
+            height: 6px 14px 5px;
+        }
+    }
+
+    .newsletter-inputs {
+        overflow: hidden;
+        padding: 0 8px 0 10px;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .newsletter-container {
+        padding-top: 27px;
+        width: 960px;
+
+        label {
+            font-size: 28px;
+            line-height: 36px;
+            margin: 0;
+        }
+    }
+
+    .submit-btn {
+        min-width: 112px;
+    }
+}

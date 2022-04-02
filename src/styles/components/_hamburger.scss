@@ -5,8 +5,9 @@
 
 /* Hamburger Styles */
 .hamburger-menu {
-    width: 50px;
-    height: 50px;
+    float: right;
+    width: 40px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,4 +46,33 @@
 .is-active .line-menu.bottom{
     transform: rotate(-90deg) translateX(-3px);
     width: 50%;
+}
+
+
+.menu-dropdown {
+    max-height: 4000px;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.menu-list {
+    text-align: left;
+    background: rgba(54, 54, 54, .75);
+    padding-left: 0;
+    list-style: none;
+    li {
+        color: #fff;
+        display: block;
+        padding: 5px 15px;
+    }
+}
+
+@media(min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
 }

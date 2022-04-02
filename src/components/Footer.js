@@ -9,7 +9,6 @@ import phone1 from '../images/2048px-Circle-icons-phone.svg.png'
 import waveblue from '../images//wave-blue-light.png'
 
 
-
 function Footer() {
     return (     
       <footer id="footer">

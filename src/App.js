@@ -5,31 +5,29 @@ import './styles/styles.scss';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Sliders from './components/Sliders';
 import Main from './components/Main';
+import About from './components/About';
+import MediaPlayer from './components/MediaPlayer';
+import Newsletter from './components/Newsletter';
+import MoreInfo from './components/Moreinfo';
 import Footer from './components/Footer';
 
 
 function App() {
   return (
+    <body>
     <BrowserRouter>
-      <div className="App">
-        <div className="top-banner-section">
-           <Header />
-           <Sliders />
-        </div>
-
-        <div className='main-banner-section'>
-          <Main />
-          <Footer />
-        </div>
-       
-        {/* <Routes>
-          <Route path="/">
-            
-          </Route>
-        </Routes> */}
-       
+      <div className='wrapper'>
+        <Header />
+        <Sliders />
+        <Main />
+        <About />
+        <MediaPlayer />
+        <Newsletter />
+        <MoreInfo />
+        <Footer />
       </div>
     </BrowserRouter>
+    </body>
   );
 }
 

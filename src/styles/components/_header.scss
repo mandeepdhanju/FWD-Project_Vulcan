@@ -3,15 +3,49 @@
 
 
 header {
-    background-color: rgba(black, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-    padding: em(6) em(8);
-    position: relative;
+    background: rgba(54, 54, 54, .75);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
 }
 
+
+.header-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-contact {
+    display: none;
+}
+
+.header-content {
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.header-contact {
+    display: none;
+}
+
+.header-logo {
+    float: left;
+    width: 99px;
+}
+
+.vulcan-logo {
+    display: block;
+    width: 99px;
+    height: 40px;
+    background-size: 99px 40px;
+    text-decoration: none;
+    text-indent: -9999px;
+}
 
 .logo {
     width: 100px;
@@ -20,4 +54,105 @@ header {
     }
 }
 
+.menu-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    header {
+        background: none;
+    }
+
+    .header-contact {
+        position: relative;
+        display: flex;
+        padding: 10px 0 0;
+    }
+
+
+    .header-contact-items {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .header-contact-links {
+        float: left;
+    }
+
+    .header-contact-list {
+        padding: 0 5px;
+        list-style: none;
+
+        li {
+            vertical-align: top;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 500px;
+            padding: 0 13px;
+            display: inline-block;
+            color: #fff;
+            position: relative;
+        }
+
+    }
+
+    .header-content {
+        padding-top: 0;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-logo {
+        float: none;
+        width: 160px;
+        display: block;
+        margin: -7px auto 15px;
+    }
+
+    .vulcan-logo {
+        width: 160px;
+        height: 66px;
+        background-size: 160px 66px;
+    }
+
+    .nav-items {
+        padding: 0;
+        float: none;
+    }
+
+    .menu-desktop {
+        display: block;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .menu-list-desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        background: rgba(54, 54, 54, .75);
+        padding-left: 0;
+        list-style: none;
+
+        li {
+            position: relative;
+            vertical-align: middle;
+            width: 11%;
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 500;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            padding: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+    }
+} 
 
