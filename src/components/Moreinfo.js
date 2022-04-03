@@ -1,6 +1,6 @@
 import "../styles/styles.scss"
 import mapimage from '../images/map.jpg'
-
+import waveblue from '../images//wave-blue-light.png'
 function MoreInfo() {
     return(
         <div className='more-info'>
@@ -12,7 +12,9 @@ function MoreInfo() {
                 <h2>READY TO SPEC VULCAN FOR YOUR PROJECT?</h2>
                 <a href="#" className="contact-btn">CONTACT US</a>
             </div>
+            <img src={waveblue} alt="waveBlueLine" className="waveBlueLine"/>
         </div>
+        
     )
 }
 

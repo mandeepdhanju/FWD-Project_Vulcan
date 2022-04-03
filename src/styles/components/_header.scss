@@ -52,7 +52,10 @@ header {
 .menu-desktop {
     display: none;
 }
-
+.menu-list-desktop{
+    margin: 0;
+    padding: 0 30px;
+}
 @media (min-width: 768px) {
     header {
         background: none;
@@ -73,7 +76,6 @@ header {
 
 
     .header-contact-links {
-        float: left;
         text-transform: uppercase;
     }
 
@@ -100,6 +102,14 @@ header {
         width: 100%;
         padding: 0;
         justify-content: space-evenly;
+    }
+    .header-contact-list{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header-contact-items{
+        width: 100%;
     }
 
     .header-logo {
@@ -146,3 +156,23 @@ header {
     }
 } 
 
+@media (min-width: 1024px) {
+    
+    .menu-desktop{
+        margin: 30px 0;
+        
+    }
+    .menu-list-desktop{
+        width: 800px !important;
+    }
+    .menu-list-desktop li{
+        padding: 30px;
+        
+    }
+    .menu-list-desktop li:hover{
+        background-color: #009ddc;
+    }
+    .slider{
+        padding: 300px 0 200px!important;
+    }
+}

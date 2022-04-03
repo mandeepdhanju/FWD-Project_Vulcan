@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 .more-info>div{
     padding: 0 14px;
@@ -15,13 +16,19 @@
 }
 .more-info a{
     font-size: 16px;
-    padding: 10px;
+    min-width: 198px;
+    padding: 10px 12px;
     max-width: 200px;
     background: none;
     font-weight: 700;
     border-radius: 0;
     margin: 0 auto;
     text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.more-info a:hover {
+    color: #009ddc;
+	background: #fff;
 }
 .find-vulcan {
     height: 50%;
@@ -51,14 +58,27 @@
     color: #fff;
     border: 1px solid #fff;
 }
+.waveBlueLine{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
 
 @media(min-width: 768px) {
     .more-info{
         flex-direction: row-reverse;
-        height: 350px;
+        height: 400px;
     }
     .more-info>div{
         flex-basis: 50%;
         height: 100%;
+    }
+}
+@media (min-width: 1024px) {
+    .more-info{
+        height: 600px;
+    }
+    .more-info h2{
+        font-size: 48px;
     }
 }

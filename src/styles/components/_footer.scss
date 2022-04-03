@@ -1,9 +1,9 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.waveBlueLine{
-    margin-bottom: -5px;
-    background: #154a66;
+.logo{
+    width: 99px;
+    margin: auto;
 }
 footer{
     background-color: #009ddc;
@@ -11,15 +11,15 @@ footer{
 
     .footer-content {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-
     .footer-logo{
         display: flex;
         justify-content: center;
-        align-items: center; 
-        height: 100px;
+        margin-bottom: 30px;
     }
-
     .footer-links{
        // background-color: green;
        // text-decoration: none;
@@ -71,4 +71,23 @@ footer{
         }
     }
   
+}
+@media (min-width: 768px) {
+footer{
+    .footer-content {
+        flex-direction: row;
+        
+    }
+    .footer-content>div{
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+        width: 50%;
+        justify-content: center;
+    }
+}
+.logo{
+    width: 160px;
+    margin: auto;
+}
 }

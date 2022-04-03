@@ -6,7 +6,7 @@
     text-align: center;
     align-items: center;
     background-size: cover;
-    padding: 200px 14px 100px;
+    padding: 200px 14px 200px;
 }
 #slider1{
     background: url(../../images/header-slider-img-01.jpg);
@@ -23,6 +23,8 @@
     padding-bottom: 50px;
     font-size: 30px;
     line-height: 1.2em;
+    
+    margin: auto;
 }
 .slider-btn {
     margin: 0 auto 20px;
@@ -33,8 +35,49 @@
     background: transparent;
     color: white;
     display: block;
+    transition:.3s ease-in-out;
 }
 .slider-btn:hover{
-    background: white;
-    color: black;
+    color: #009ddc;
+	background: #fff;
+}
+.hero-slider{
+    position: relative;
+}
+.waves-divider{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slick-dots{
+    bottom: 80px !important;
+}
+.slick-dots li button::before{
+    color: white !important;
+    font-size: 20px !important;
+    opacity: 1 !important;
+}
+.slick-dots li.slick-active button::before{
+    color: #009ddc !important;
+}
+@media (min-width: 768px) {
+    .slider-label {
+        font-size: 50px;
+        line-height: 1.2em;
+        max-width: 800px;
+    }
+    .slider-btn{
+        display: inline;
+        margin: 0 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .slider-label{
+        font-size: 80px;
+        max-width: 1300px;
+    }
 }

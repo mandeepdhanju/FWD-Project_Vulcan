@@ -1,9 +1,10 @@
 import "../styles/styles.scss"
 import bgimage from '../images/bg-section-about-us.jpg'
-
+import Waves from '../images//waves-top.png';
 function About() {
     return (
         <div className="about-us" style={{ backgroundImage: `url(${bgimage})` }}>
+            <img src={Waves} alt="" className="waves-top-divider"/>
             <div className="about-us-container">
                 <div className="about-us-column">
                     <h2>DELIVERING CLEAN, SAFE WATER SINCE 1975. REFRESHING INDEED.</h2>

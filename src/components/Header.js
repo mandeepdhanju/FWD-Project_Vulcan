@@ -23,11 +23,15 @@ function Header() {
               <div className='header-contact-items'>
                 <div className='header-contact-links'>
                   <ul className='header-contact-list'>
-                    <li>INSTALL MAP</li>
-                    <li>PRODUCT LITERATUE</li>
+                    <div>
+                      <li>INSTALL MAP</li>
+                      <li>PRODUCT LITERATUE</li>
+                    </div>
                     <li><a href='#' className='vulcan-logo' style={{backgroundImage: `url(${logo})`}}>VULCAN</a></li>
-                    <li>+1 712-642-2755</li>
-                    <li>Contact Us</li>
+                    <div>
+                      <li>+1 712-642-2755</li>
+                      <li>Contact Us</li>
+                    </div>
                   </ul>
                 </div>
               </div>

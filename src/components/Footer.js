@@ -1,5 +1,5 @@
 import "../styles/styles.scss"
-import Logo from './Logo';
+import Logo from '../images//vulcan-industries-logo.png'
 import logo from '../images/vulcan-industries-logo.webp'
 import machine1 from '../images/machine-01-300x274.png'
 import flogo from '../images/icon-white-facebook.png'
@@ -13,12 +13,12 @@ function Footer() {
     return (     
       <>
       <div class="waveBlueLine">
-        <img src={waveblue} alt="waveBlueLine" />
+        
       </div>
       <footer id="footer">
         <div className="footer-content">
           <div class="footer-logo">
-            <Logo />
+            <img src={Logo} alt="" className="logo"/>
           </div>
           <div class="footer-links">
             <ul class="footer-Ulist">
