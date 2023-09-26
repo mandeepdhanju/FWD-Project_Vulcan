@@ -21,17 +21,17 @@ function Sliders(){
       <div className="hero-slider">
       <Slider {...settings}>
         <div className="slider" id="slider1">
-          <h2 className="slider-label">WE DESIGN AND FABRICATE INDESTRUCTIBLE WASTEWATER SCREENS. ENOUGH SAID.</h2>
+          <h2 className="slider-label">WE DESIGN BLINDS,SCREENS AND PATIO DOOR.</h2>
           <button className="slider-btn">VIEW PRODUCTS</button>
           <button className="slider-btn">VIEW SERVICES</button>
         </div>
         <div className="slider" id="slider2">
-          <h2 className="slider-label">WE DESIGN AND FABRICATE INDESTRUCTIBLE WASTEWATER SCREENS. ENOUGH SAID.</h2>
+          <h2 className="slider-label">WE DESIGN BLINDS,SCREENS AND PATIO DOOR.</h2>
           <button className="slider-btn">VIEW PRODUCTS</button>
           <button className="slider-btn">VIEW SERVICES</button>
         </div>
         <div className="slider" id="slider3">
-          <h2 className="slider-label">WE DESIGN AND FABRICATE INDESTRUCTIBLE WASTEWATER SCREENS. ENOUGH SAID.</h2>
+          <h2 className="slider-label">WE DESIGN BLINDS,SCREENS AND PATIO DOOR.</h2>
           <button className="slider-btn" href="#">VIEW PRODUCTS</button>
           <button className="slider-btn" href="#">VIEW SERVICES</button>
         </div>

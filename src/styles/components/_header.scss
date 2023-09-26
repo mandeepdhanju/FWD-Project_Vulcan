@@ -40,6 +40,8 @@ header {
     background-size: 99px 40px;
     text-decoration: none;
     text-indent: -9999px;
+
+    
 }
 
 .logo {
@@ -55,7 +57,54 @@ header {
 .menu-list-desktop{
     margin: 0;
     padding: 0 30px;
+    .blinds{
+        // color: red;
+        position: relative;
+    }
 }
+// .home{
+//     color: red;
+//     position: relative;
+//     cursor: pointer;
+//     border: gray;
+// }
+
+// .listnames{
+//     background: white;
+//     padding: 4;
+//     width: 52;
+//     ul{
+//             color: green;
+//             cursor: pointer;                 
+//             padding: 2;
+//             font-size: large;
+//             box-shadow: auto;
+//             &:hover{
+//                 background-color: lightgray;           
+//             }                   
+//     }
+// }
+
+.blindsList{
+    color: Green;
+    cursor: pointer;
+    padding: 2;
+    box-shadow: auto;
+    background-color: lightgray;
+    ul{
+        &:hover{
+            background-color: #009ddc;           
+        }       
+    }  
+}
+
+.menu-list-desktop a{
+    text-decoration: none;
+}
+
+
+
+
 @media (min-width: 768px) {
     header {
         background: none;
@@ -93,8 +142,10 @@ header {
             color: #fff;
             position: relative;
         }
+        
 
     }
+  
 
     .header-content {
         position: relative;
@@ -143,7 +194,8 @@ header {
         justify-content: space-between;
         flex-direction: row;
         align-items: stretch;
-        background: rgba(54, 54, 54, .75);
+        // background: rgba(54, 54, 54, .75);
+       background-color: #009ddc;
         list-style: none;
 
         li {
@@ -170,7 +222,9 @@ header {
         
     }
     .menu-list-desktop li:hover{
-        background-color: #009ddc;
+        // background-color: #009ddc;
+         background-color: black;
+        // background-color:rgb(244, 76, 143);
     }
     .slider{
         padding: 300px 0 200px!important;

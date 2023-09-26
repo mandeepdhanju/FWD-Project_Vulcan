@@ -1,9 +1,9 @@
 import "../styles/styles.scss"
-
-import machine1 from '../images/machine-01-300x274.png'
-import machine2 from '../images/machine-02-300x274.png'
-import machine3 from '../images/machine-03-300x274.png'
-import machine4 from '../images/machine-04-300x274.png'
+import machine1 from '../images/blinds3.jpg'
+// import machine4 from '../images/BLINDS2.webp'
+import machine2 from '../images/patioDoor2.jpg'
+import machine3 from '../images/ScreenRollar1.jpg'
+import machine10 from '../images/machine-04-300x274.png'
 import bgimage from '../images/bg-section-about-us.jpg'
 import mapimage from '../images/map.jpg'
 
@@ -28,7 +28,7 @@ function Main() {
                                         <img className="product-img" src={machine1} />
                                     </div>
                                     <div className="detail">
-                                        <h3 className="product-title">SCREENING</h3>
+                                        <h3 className="product-title">BLINDS</h3>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ function Main() {
                                         <img className="product-img" src={machine2} />
                                     </div>
                                     <div className="detail">
-                                        <h3 className="product-title">SCREENING HANDLING</h3>
+                                        <h3 className="product-title">PATIO DOORS</h3>
                                     </div>
                                 </div>
 
@@ -52,7 +52,7 @@ function Main() {
                                         <img className="product-img" src={machine3} />
                                     </div>
                                     <div className="detail">
-                                        <h3 className="product-title">GRIT HANDLING</h3>
+                                        <h3 className="product-title">SCREENS</h3>
                                     </div>
                                 </div>
 

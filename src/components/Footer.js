@@ -5,20 +5,19 @@ import machine1 from '../images/machine-01-300x274.png'
 import flogo from '../images/icon-white-facebook.png'
 import inlogo from '../images/icon-white-linkedin.png'
 import phone1 from '../images/2048px-Circle-icons-phone.svg.png'
-
 import waveblue from '../images//wave-blue-light.png'
-
+import logo2 from '../images/logo-2.png'
+import logo1 from '../images/logo-1.jpg'
 
 function Footer() {
     return (     
       <>
       <div class="waveBlueLine">
-        
       </div>
       <footer id="footer">
         <div className="footer-content">
-          <div class="footer-logo">
-            <img src={Logo} alt="" className="logo"/>
+          <div class="footer-logo img">
+            <img src={logo2} alt="" className="logo"/>
           </div>
           <div class="footer-links">
             <ul class="footer-Ulist">
@@ -46,7 +45,7 @@ function Footer() {
                 </a>
               </li>
               <li className="copyright">
-                <span>Copyright 2022. All Rights Reserved</span>
+                <span>Copyright 2023. All Rights Reserved</span>
               </li>               
             </ul>
           </div>

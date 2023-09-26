@@ -2,8 +2,9 @@
 @use '../utilities/mixins' as *;
 
 .logo{
-    width: 99px;
-    margin: auto;
+    // width: 99px;
+ 
+    // margin: auto;
 }
 footer{
     background-color: #009ddc;
@@ -19,6 +20,11 @@ footer{
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
+      
+    }
+    img{
+        height: auto;
+        width: auto;
     }
     .footer-links{
        // background-color: green;

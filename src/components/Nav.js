@@ -48,13 +48,3 @@ function Nav() {
 export default Nav;
 
 
-
-     {/* <ul>
-                <li><NavLink to="/">About</NavLink></li>
-                <li><NavLink to="/">About</NavLink></li>
-                <li><NavLink to="/">Products</NavLink></li>
-                <li><NavLink to="/">Services</NavLink></li>
-                <li><NavLink to="/">Parts</NavLink></li>
-                <li><NavLink to="/">News</NavLink></li>
-                <li><NavLink to="/">Contact</NavLink></li>
-            </ul> */}

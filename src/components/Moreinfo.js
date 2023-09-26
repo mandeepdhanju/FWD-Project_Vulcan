@@ -6,13 +6,14 @@ function MoreInfo() {
         <div className='more-info'>
             <div className='find-vulcan'>
                 <h2>INSTALLED IN A CITY NEAR YOU</h2>
-                <a href="#" className="more-info-btn">FIND A VULCAN INSTALL</a>
+                <a href="#" className="more-info-btn">FIND LOCATION</a>
             </div>
             <div className="contact">
-                <h2>READY TO SPEC VULCAN FOR YOUR PROJECT?</h2>
-                <a href="#" className="contact-btn">CONTACT US</a>
+                <h2>EXPERIENCE YOU CAN COUNT ON </h2>
+                <p>MegaStars experts are experienced in working with architects, builders and homeowners to ensure your vision becomes a reality.</p>
+                <a href="contact" className="contact-btn">CONTACT US</a>
             </div>
-            <img src={waveblue} alt="waveBlueLine" className="waveBlueLine"/>
+            <img src={waveblue} alt="" className="waveBlueLine"/>
         </div>
         
     )
